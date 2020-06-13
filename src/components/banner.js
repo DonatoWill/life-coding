@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Img from "gatsby-image";
+import { Link } from "gatsby";
 
 export default class Banner extends Component {
   render() {
@@ -10,16 +11,23 @@ export default class Banner extends Component {
           fixed={data.bannerImage.fluid}
           objectFit="cover"
           objectPosition="50% 50%"
+          shadow= "#192550"
         />
         <div className="container">
           <div className="banner-details">
-            <span>Hello...</span>
-            <h1>I'm {data.designation}.</h1>
+            
+            <h1>Olá! Sou {data.designation}.</h1>
+            <span>Aqui tento passar um pouco do que aprendi e venho aprendendo. <span class="texto-destaque">Seja bem-vindo!</span></span>
             <ul className="sub-data">
               {data.bannerList.map((item, index) => {
                 return <li key={index}>{item}</li>;
               })}
             </ul>
+            <div className="see-more-dark">
+              <Link to="/blogs">
+                <span>Ver Blog</span>
+              </Link>
+            </div>
             <ul className="social">
               <li>
                 <a

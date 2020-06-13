@@ -221,3 +221,17 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 @media only screen and (max-width:480px){
     .about-main .left .gatsby-image-wrapper{height:400px}
 }
+
+.see-more-dark{text-align:center;display:inline-block;width:100%; margin-bottom: 2em;}
+.see-more-dark a{
+    text-decoration:none;width:auto;height:auto;border:1px solid #FFF;color:#FFF;position:relative;overflow:hidden;
+    padding:8px 20px;display:inline-block;font-weight:600;
+}
+.see-more-dark a:after{content:"";background:rgb(239, 88, 38);position:absolute;top:-100%;left:0;-webkit-transition:0.3s all;transition:0.3s all;height:100%;width:100%;z-index:0}
+.see-more-dark a:hover:after{top:0}
+.see-more-dark a:hover{color:#fff}
+.see-more-dark a span{position:relative;z-index:1}
+
+.texto-destaque{
+    color:rgb(239, 88, 38);
+}
