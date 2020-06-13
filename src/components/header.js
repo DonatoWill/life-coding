@@ -35,7 +35,7 @@ export default class Header extends Component {
             >
               <span></span>
             </div>
-            {header === "home" ? (
+            
               <div className="menu">
                 <ul
                   onClick={() => {
@@ -56,34 +56,17 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
-                    {data.menus
-                    .filter(item => item === "Work")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Work`}>Portfolio</Link>
-                        </li>
-                      );
-                    })}
+                  
                   {data.menus
                     .filter(item => item === "About")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#About`}>Sobre</Link>
+                          <Link to={`/about`}>Sobre</Link>
                         </li>
                       );
                     })}
-                  {data.menus
-                    .filter(item => item === "Service")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Service`}>Tecnologias</Link>
-                        </li>
-                      );
-                    })}
-
+                 
                   {data.menus
                     .filter(item => item === "Contact")
                     .map(t => {
@@ -94,40 +77,7 @@ export default class Header extends Component {
                       );
                     })}
                 </ul>
-              </div>
-            ) : (
-              <div className="menu">
-                <ul
-                  onClick={() => {
-                    this.setState({
-                      menu: false
-                    });
-                  }}
-                >
-                  <li>
-                    <Link to="/#home">Home</Link>
-                  </li>
-                  {data.menus
-                    .filter(item => item === "Blogs")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to="/blogs">Blogs</Link>
-                        </li>
-                      );
-                    })}
-                  {data.menus
-                    .filter(item => item === "Photos")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to="/photos">Photos</Link>
-                        </li>
-                      );
-                    })}
-                </ul>
-              </div>
-            )}
+              </div>            
           </div>
         </div>
       </header>

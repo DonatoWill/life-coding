@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
-
+import Service from "../components/service";
 const Header = ({ data }) => (
   <div className="about section" id="About">
     <div className="container">

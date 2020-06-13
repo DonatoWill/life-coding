@@ -6,7 +6,7 @@ export default class Contact extends Component {
       <div className="contact section" id="Contact">
         <div className="container">
           <div className="section-head">
-            <h2 className="text-center">Contact</h2>
+            <h2 className="text-center">Contato</h2>
           </div>
           <form
             action={`https://formspree.io/${this.props.data}`}
@@ -16,17 +16,17 @@ export default class Contact extends Component {
           >
             <div>
               <label>
-                Your Name: <input type="text" name="name" required />
+                Seu nome: <input type="text" name="name" required />
               </label>
             </div>
             <div>
               <label>
-                Your Email: <input type="email" name="email" required />
+                Seu Email: <input type="email" name="email" required />
               </label>
             </div>
             <div>
               <label>
-                Message: <textarea name="message" required></textarea>
+                Mensagem: <textarea name="message" required></textarea>
               </label>
             </div>
             <div>
