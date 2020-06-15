@@ -5,6 +5,8 @@ import { Link } from "gatsby";
 export default class Banner extends Component {
   render() {
     const { data } = this.props;
+    const charLeft = "{ ";
+    const charRight = " }";
     return (
       <div className="banner">
         <Img
@@ -16,7 +18,9 @@ export default class Banner extends Component {
         <div className="container">
           <div className="banner-details">
             
-            <h1>Olá! Sou {data.designation}.</h1>
+            <div class="typewriter">
+    <h1>{charLeft}Life Coding{charRight}</h1>
+            </div>
             <span>Aqui tento passar um pouco do que aprendi e venho aprendendo. <span class="texto-destaque">Seja bem-vindo!</span></span>
             <ul className="sub-data">
               {data.bannerList.map((item, index) => {

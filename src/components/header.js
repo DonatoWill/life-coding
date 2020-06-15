@@ -67,6 +67,15 @@ export default class Header extends Component {
                       );
                     })}
                  
+                 {data.menus
+                    .filter(item => item === "About")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to={`/portfolio`}>Portfolio</Link>
+                        </li>
+                      );
+                    })}
                   {data.menus
                     .filter(item => item === "Contact")
                     .map(t => {

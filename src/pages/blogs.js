@@ -20,8 +20,11 @@ export default class Blogs extends Component {
           <div className="container">
             <div className="section-head">
               <h1 className="line-heading h2">Blogs</h1>
-            </div>
-            <ul
+          </div>
+
+          <span class="coming-soon-text">Coming Soon...</span>
+ 
+           {/*  <ul
               className={`blogs-list ${
                 data.allContentfulBlogs.edges.length < 5 ? "few-blogs" : ""
               }`}
@@ -51,7 +54,7 @@ export default class Blogs extends Component {
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
           </div>
         </div>
       </Layout>

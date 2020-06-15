@@ -12,7 +12,8 @@ export default class Blogs extends Component {
           <div className="section-head">
             <h2>Blogs</h2>
           </div>
-          <ul
+          <span class="coming-soon-text">Coming Soon...</span>
+          {/* <ul
             className={`blogs-list ${data.edges.length < 5 ? "few-blogs" : ""}`}
           >
             {data.edges.map((item, index) => {
@@ -41,7 +42,7 @@ export default class Blogs extends Component {
                 </li>
               );
             })}
-          </ul>
+          </ul> */}
           <div className="see-more">
             <Link to="/blogs">
               <span>More Blogs</span>

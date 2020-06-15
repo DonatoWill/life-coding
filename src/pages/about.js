@@ -16,7 +16,7 @@ export default class About extends Component {
             title="About"
             keywords={[`Donato William`, `Backend Developer`, `Developer`, `Blogs`]}
           />
-          <div className="site-container blogs-page" id="Blogs">
+          <div className="site-container about-page" id="About">
           <div className="container">
       <div className="about-main row">
         <div className="left col-md-5 col-lg-4 mb-3">
@@ -30,7 +30,7 @@ export default class About extends Component {
           <div className="about-details">
             <span className="name">Meu nome é {data.contentfulAboutMe.name}.</span>
             <h2 className="sub-position">
-              Sou {data.contentfulAboutMe.designation}.
+            Software Developer.
             </h2>
             <div
               dangerouslySetInnerHTML={{
@@ -106,10 +106,6 @@ export default class About extends Component {
       </div>
     </div>
           </div>
-  
-    <Service data={data.allContentfulService}></Service>;
-    
-    <Work data={data.allContentfulWorks}></Work>;
 
     </Layout>
       );
