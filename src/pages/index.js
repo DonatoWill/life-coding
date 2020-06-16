@@ -5,11 +5,11 @@ import SEO from "../components/seo";
 import Banner from "../components/banner";
 import Blogs from "../components/blogs";
 import Contact from "../components/contact";
-
+const title = "{ The Life Coding }";
 const IndexPage = ({ data }) => (
   <Layout header="home">
     <SEO
-      title={data.contentfulAboutMe.designation}
+      title={title}
       keywords={[`Donato William`, `Back-end Developer`, `Developer`, `Web`, `Software`, `Java`]}
     />
     <Banner data={data.contentfulAboutMe}></Banner>

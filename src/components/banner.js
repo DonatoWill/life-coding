@@ -19,7 +19,7 @@ export default class Banner extends Component {
           <div className="banner-details">
             
             <div class="typewriter">
-    <h1>{charLeft}Life Coding{charRight}</h1>
+    <h1>{charLeft}The Life Coding{charRight}</h1>
             </div>
             <span>Aqui tento passar um pouco do que aprendi e venho aprendendo. <span class="texto-destaque">Seja bem-vindo!</span></span>
             <ul className="sub-data">
