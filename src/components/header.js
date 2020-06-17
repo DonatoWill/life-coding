@@ -45,7 +45,7 @@ export default class Header extends Component {
                   }}
                 >
                   <li>
-                    <Link to="/#home">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   {data.menus
                     .filter(item => item === "Blogs")
