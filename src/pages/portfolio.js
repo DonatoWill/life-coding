@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
 import Service from "../components/service";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -19,12 +18,12 @@ export default class Portfolio extends Component {
                 />
                 <div className="site-container blogs-page" id="Blogs">
                     <div className="container">
-
                         <Service data={data}></Service>
-                    
-                        <Work data={data.allContentfulWorks}></Work>
 
                         <ProfessionalExp data={data.allContentfulWorks}></ProfessionalExp>
+
+                        <Work data={data.allContentfulWorks}></Work>     
+
                     </div>
                 </div>
             </Layout>
@@ -79,22 +78,20 @@ query PortfolioQuery {
       }
     }
   }
-  springLogo: file(relativePath: { eq: "spring-logo.jpg" }) {
+  springLogo: file(relativePath: { eq: "spring-logo.png" }) {
     childImageSharp {
       fixed(width: 150, height: 150) {
         ...GatsbyImageSharpFixed
       }
     }
   }
-
-  gitLogo: file(relativePath: { eq: "git-logo.jpg" }) {
+  gitLogo: file(relativePath: { eq: "git-logo.png" }) {
     childImageSharp {
       fixed(width: 150, height: 150) {
         ...GatsbyImageSharpFixed
       }
     }
   }
-
   dockerLogo: file(relativePath: { eq: "docker-logo.png" }) {
     childImageSharp {
       fixed(width: 150, height: 150) {
@@ -102,8 +99,7 @@ query PortfolioQuery {
       }
     }
   }
-
-  oracleLogo: file(relativePath: { eq: "oracle-logo.png" }) {
+  oracleLogo: file(relativePath: { eq: "oracle-logo.jpg" }) {
     childImageSharp {
       fixed(width: 150, height: 150) {
         ...GatsbyImageSharpFixed

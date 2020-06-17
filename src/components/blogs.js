@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import Img from "gatsby-image";
 import { Link } from "gatsby";
-import moment from "moment";
 
 export default class Blogs extends Component {
   render() {
