@@ -40,6 +40,15 @@ export default class service extends Component {
                 fixed={data.dockerLogo.childImageSharp.fixed}
                 className="customImg"
             />
+
+            <Img
+                fixed={data.angularLogo.childImageSharp.fixed}
+                className="customImg"
+            />
+            <Img
+                fixed={data.hibernateLogo.childImageSharp.fixed}
+                className="customImg"
+            />
            {/*  {data.edges.map((item, index) => {
               return (
                 <div key={index} className="col-md-4 mb-3">

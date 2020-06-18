@@ -19,9 +19,7 @@ export default class Portfolio extends Component {
                 <div className="site-container blogs-page" id="Blogs">
                     <div className="container">
                         <Service data={data}></Service>
-
                         <ProfessionalExp data={data.allContentfulWorks}></ProfessionalExp>
-
                         <Work data={data.allContentfulWorks}></Work>     
 
                     </div>
@@ -66,46 +64,59 @@ query PortfolioQuery {
   }
   jsLogo: file(relativePath: { eq: "js-logo.png" }) {
     childImageSharp {
-      fixed(width: 150, height: 150) {
+      fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   javaLogo: file(relativePath: { eq: "java-logo.jpg" }) {
     childImageSharp {
-      fixed(width: 150, height: 150) {
+      fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   springLogo: file(relativePath: { eq: "spring-logo.png" }) {
     childImageSharp {
-      fixed(width: 150, height: 150) {
+      fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   gitLogo: file(relativePath: { eq: "git-logo.png" }) {
     childImageSharp {
-      fixed(width: 150, height: 150) {
+      fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   dockerLogo: file(relativePath: { eq: "docker-logo.png" }) {
     childImageSharp {
-      fixed(width: 150, height: 150) {
+      fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   oracleLogo: file(relativePath: { eq: "oracle-logo.jpg" }) {
     childImageSharp {
-      fixed(width: 150, height: 150) {
+      fixed(width: 100, height: 100) {
         ...GatsbyImageSharpFixed
       }
     }
   }
-
+  angularLogo: file(relativePath: { eq: "angular-logo.png" }) {
+    childImageSharp {
+      fixed(width: 100, height: 100) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+  hibernateLogo: file(relativePath: { eq: "hibernate-logo.png" }) {
+    childImageSharp {
+      fixed(width: 100, height: 100) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
 }
 `;
