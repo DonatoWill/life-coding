@@ -18,14 +18,13 @@ export default class work extends Component {
               if(itens.includes(item.node.url)){
 
               }else{
-                itens.push(item.node.url);
-                
+                itens.push(item.node.url);              
                 return (
                   <li key={index} className="item">
                     <div className="inner">
                       <a href={item.node.url} target="_blank">
                         <Img
-                          fixed={item.node.image.fluid}
+                          fluid={item.node.image.fluid}
                           objectFit="cover"
                           objectPosition="50% 50%"
                         />

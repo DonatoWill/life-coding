@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Img from "gatsby-image";
+import moment from 'moment';
+import { Link } from "gatsby";
 
 export default class Blogs extends Component {
   render() {
@@ -17,10 +20,7 @@ export default class Blogs extends Component {
             <div className="section-head">
               <h1 className="line-heading h2">Blogs</h1>
           </div>
-
-          <span class="coming-soon-text">Coming Soon...</span>
- 
-           {/*  <ul
+           { <ul
               className={`blogs-list ${
                 data.allContentfulBlogs.edges.length < 5 ? "few-blogs" : ""
               }`}
@@ -50,7 +50,7 @@ export default class Blogs extends Component {
                   </li>
                 );
               })}
-            </ul> */}
+            </ul> }
           </div>
         </div>
       </Layout>

@@ -21,6 +21,7 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    `gatsby-plugin-material-ui`,
     {
       resolve: "gatsby-source-contentful",
       options: {

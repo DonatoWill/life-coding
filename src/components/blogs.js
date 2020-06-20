@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
+import Img from "gatsby-image";
+import moment from 'moment';
 
 export default class Blogs extends Component {
   render() {
@@ -8,10 +10,9 @@ export default class Blogs extends Component {
       <div className="blogs-section section" id="Blogs">
         <div className="container">
           <div className="section-head">
-            <h2>Blogs</h2>
+            <h2>Posts</h2>
           </div>
-          <span class="coming-soon-text">Coming Soon...</span>
-          {/* <ul
+          { <ul
             className={`blogs-list ${data.edges.length < 5 ? "few-blogs" : ""}`}
           >
             {data.edges.map((item, index) => {
@@ -40,7 +41,7 @@ export default class Blogs extends Component {
                 </li>
               );
             })}
-          </ul> */}
+          </ul> }
           <div className="see-more">
             <Link to="/blogs">
               <span>More Blogs</span>
