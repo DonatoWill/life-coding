@@ -131,6 +131,12 @@ pre{margin-bottom:0}
 .blog-post .feature-img{width:100%;height:600px}
 .blog-post .details .date{margin-bottom:40px;display:block}
 .blog-post .details{padding:20px 0}
+.blog-post .container{background: #FFF;}
+.blog-post .container .details{padding: 2em 3em 6em 3em;}
+.blog-post p{text-indent : 3em; font-size: 20px; text-align: justify; font-weight: 300;}
+.blog-post .details ul li {font-weight: 300;}
+.blog-post h2{margin-top: 2em; margin-bottom: 1.5em; font-weight: 800;}
+.blog-post h3{margin-top: 2em; margin-bottom: 1em; text-indent : 2em; font-weight: 600;}
 .post-social{margin-bottom:40px}
 .post-social button{text-decoration:none;width:auto;height:auto;border:1px solid #333!important;color:#333!important;position:relative;overflow:hidden;padding:8px 20px!important;display:inline-block;font-weight:600;margin-right:10px}
 .post-social button:after{content:"";background:#333;position:absolute;top:-100%;left:0;-webkit-transition:0.3s all;transition:0.3s all;height:100%;width:100%;z-index:0}
@@ -319,7 +325,8 @@ pre{margin-bottom:0}
 .blog-post .details h2{font-size:22px;line-height:26px;margin-bottom:20px}
 .blog-post .details h3{font-size:18px}
 .blog-post .details h4{font-size:16px}
-.blog-post .details ul li{font-size:14px}
+.blog-post .details ul li{font-size:20px}
+.blog-post .details h3 + ul{margin-left: 2em;}
 .photos-list .slick-list .slick-track{margin:0 -5px}
 .photos-list .slick-list .slick-track .slick-slide{padding:0 5px}
 code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;padding:15px!important;color:#fff !important}
