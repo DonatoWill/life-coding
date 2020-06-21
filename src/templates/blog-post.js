@@ -11,15 +11,15 @@ import Share from "../components/share";
 export default class blogPost extends Component {
   render() {
     const data = this.props.data.contentfulBlogs;
-    const disqusShortname = "RohitGupta";
+    const disqusShortname = "thelifecoding";
     const disqusConfig = {
       identifier: data.id,
       title: data.title
     };
 
     const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
-    const twiteerhandle = this.props.data.contentfulSiteInformation
-      .twiteerHandle;
+    const twiteerhandle = this.props.data.contentfulSiteInformation.twiteerHandle;
+  
     const socialConfigss = {
       site: {
         siteMetadata: { siteurl, twiteerhandle }
@@ -33,9 +33,10 @@ export default class blogPost extends Component {
         <SEO
           title={data.title}
           keywords={[
-            `Rohit Gupta`,
-            `Frontend Developer`,
+            `Software`,
             `Developer`,
+            `Backend Developer`,
+            `System Developer`,
             `${data.title}`
           ]}
         />
@@ -44,7 +45,7 @@ export default class blogPost extends Component {
             {data.featureImage ? (
               <Img
                 className="feature-img"
-                fixed={data.featureImage.fluid}
+                fluid={data.featureImage.fluid}
                 objectFit="cover"
                 objectPosition="50% 50%"
               />
@@ -55,7 +56,7 @@ export default class blogPost extends Component {
             <div className="details">
               <h1 className="title">{data.title}</h1>
               <span className="date">
-                <i class="fas fa-calendar-alt"></i>{" "}
+                <i className="fas fa-calendar-alt"></i>{" "}
                 {moment(data.createdAt).format("LL")}
               </span>
               <div
@@ -66,7 +67,7 @@ export default class blogPost extends Component {
             </div>
             <Share
               socialConfig={{
-                ...socialConfigss.site.siteMetadata.twiteerhandletitle,
+                twitterHandle: `${socialConfigss.site.siteMetadata.twiteerhandle}`,
                 config: {
                   url: `${siteurl}${socialConfigss.slug}`,
                   title: `${socialConfigss.title}`

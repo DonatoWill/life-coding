@@ -86,7 +86,6 @@ export default class Contact extends Component {
                 name="message"
                 rows={4}
                 fullWidth
-                defaultValue="Mensagem"
               />
             </Grid>
             <Grid item xs={12} sm={8}>

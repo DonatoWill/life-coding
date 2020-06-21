@@ -83,7 +83,7 @@ form>div{margin-bottom:15px}
 .blogs-list .item .inner img{width:100%!important;-webkit-transition:0.3s all!important;transition:0.3s all!important}
 .blogs-list .item .inner:hover img{transform:scale(1.1)}
 .blogs-list .item .inner:hover{border:3px #ef5826 solid;}
-.blogs-list .item .inner:hover .details{color: #ef5826;}
+.blogs-list .item .inner:hover .details{color: #FFF;}
 .blogs-list .item .inner .details .title{margin-bottom:5px;text-shadow:1px 1px 4px #333}
 .blogs-list .item .inner .details .title a{color:#fff;font-size:24px;text-shadow:1px 1px 4px #333;text-decoration:none}
 .blogs-list .item .inner .details .date{display:block;margin-bottom:0;text-shadow:1px 1px 4px #333}
