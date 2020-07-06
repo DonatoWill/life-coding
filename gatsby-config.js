@@ -43,12 +43,5 @@ module.exports = {
         icon: `src/images/logo-life-code.png` // This path is relative to the root of the site.
       }
     }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
-    `gatsby-plugin-offline`,
-    {
-    resolve: 'gatsby-plugin-remove-console',
-      options: {
-        exclude: ['error'], // <- will be removed all console calls except these
-      }
-    }
   ]
 };

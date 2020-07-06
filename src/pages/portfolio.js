@@ -13,7 +13,7 @@ export default class Portfolio extends Component {
         return (
             <Layout>
                 <SEO
-                    title="About"
+                    title="Portfolio"
                     keywords={[`Donato William`, `Backend Developer`, `Developer`, `Blogs`]}
                 />
                 <div className="site-container blogs-page" id="Blogs">
