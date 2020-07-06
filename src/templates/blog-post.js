@@ -27,7 +27,7 @@ export default class blogPost extends Component {
       title: data.title,
       slug: data.slug
     };
-
+    console.log("Teste" + siteurl);
     return (
       <Layout>
         <SEO
