@@ -27,7 +27,6 @@ export default class blogPost extends Component {
       title: data.title,
       slug: data.slug
     };
-    console.log("Teste" + siteurl);
     return (
       <Layout>
         <SEO
@@ -57,7 +56,7 @@ export default class blogPost extends Component {
               <h1 className="title">{data.title}</h1>
               <span className="date">
                 <i className="fas fa-calendar-alt"></i>{" "}
-                {moment(data.createdAt).format("LL")}
+                {moment(data.updatedAt).format("LL")}
               </span>
               <div
                 dangerouslySetInnerHTML={{
@@ -108,6 +107,7 @@ export const pageQuery = graphql`
         }
       }
       createdAt
+      updatedAt
     }
     contentfulSiteInformation {
       siteUrl
