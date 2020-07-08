@@ -28,7 +28,7 @@ export default class Blogs extends Component {
 
                       {item.node.featureImage ? (
                         <Img
-                          fixed={item.node.featureImage.fluid}
+                          fluid={item.node.featureImage.fluid}
                           objectFit="cover"
                           objectPosition="50% 50%"
                         />
@@ -39,7 +39,7 @@ export default class Blogs extends Component {
                         <h3 className="title">{item.node.title}</h3>
                         <span className="date">
                           <i className="fas fa-calendar-alt"></i>{" "}
-                          {moment(item.node.createdAt).format("LL")}
+                          {moment(item.node.updatedAt).format("LL")}
                         </span>
                       </div>
                     </div>
@@ -50,7 +50,7 @@ export default class Blogs extends Component {
           </ul> }
           <div className="see-more">
             <Link to="/blogs">
-              <span>More Blogs</span>
+              <span>Mais Posts</span>
             </Link>
           </div>
         </div>

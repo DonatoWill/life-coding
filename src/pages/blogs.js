@@ -28,8 +28,9 @@ export default class Blogs extends Component {
             >
               {data.allContentfulBlogs.edges.map((item, index) => {
                 if(!itens.includes(item.node.title)){
-                  itens.push(item.node.title);     
+                  itens.push(item.node.title);   
                   return (
+                    
                     <li key={index} className="item">
                       <div className="inner">
                         <Link className="link" to={item.node.slug} />

@@ -12,6 +12,7 @@ export default class blogPost extends Component {
   render() {
     const data = this.props.data.contentfulBlogs;
     const disqusShortname = "thelifecoding";
+    console.log(data);
     const disqusConfig = {
       identifier: data.id,
       title: data.title
@@ -19,7 +20,6 @@ export default class blogPost extends Component {
 
     const siteurl = this.props.data.contentfulSiteInformation.siteUrl + "/";
     const twiteerhandle = this.props.data.contentfulSiteInformation.twiteerHandle;
-  
     const socialConfigss = {
       site: {
         siteMetadata: { siteurl, twiteerhandle }

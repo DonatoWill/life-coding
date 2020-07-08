@@ -57,7 +57,7 @@ export default class Photos extends Component {
           </div>
           <div className="see-more">
             <Link to="/photos">
-              <span>More Photo</span>
+              <span>Mais Fotos</span>
             </Link>
           </div>
         </div>
