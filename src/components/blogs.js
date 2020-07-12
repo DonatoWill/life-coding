@@ -17,9 +17,7 @@ export default class Blogs extends Component {
             className={`blogs-list ${data.edges.length < 5 ? "few-blogs" : ""}`}
           >
             {data.edges.map((item, index) => {
-               if(itens.includes(item.node.title)){
-
-              }else{
+               if(!itens.includes(item.node.title)){
                 itens.push(item.node.title);   
                 return (
                   <li key={index} className="item">

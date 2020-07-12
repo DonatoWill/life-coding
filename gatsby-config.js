@@ -42,6 +42,12 @@ module.exports = {
         theme_color: `#333`,
         icon: `src/images/logo-life-code.png` // This path is relative to the root of the site.
       }
-    }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
+    }, 
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-171614906-1",
+      },
+    },
   ]
 };
