@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import Service from "../components/service";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Work from "../components/work";
 
 export default class About extends Component {
 
@@ -21,7 +19,7 @@ export default class About extends Component {
       <div className="about-main row">
         <div className="left col-md-5 col-lg-4 mb-3">
           <Img
-            fixed={data.contentfulAboutMe.photo.fluid}
+            fluid={data.contentfulAboutMe.photo.fluid}
             objectFit="cover"
             objectPosition="top center"
           />

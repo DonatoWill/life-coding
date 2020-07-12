@@ -20,7 +20,7 @@ export default class Portfolio extends Component {
                     <div className="container">
                         <Service data={data}></Service>
                         <ProfessionalExp data={data.allContentfulWorks}></ProfessionalExp>
-                        <Work data={data.allContentfulWorks}></Work>     
+                        <Work data={data.allContentfulWorks}></Work>    
 
                     </div>
                 </div>

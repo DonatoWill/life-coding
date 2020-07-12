@@ -12,7 +12,6 @@ export default class blogPost extends Component {
   render() {
     const data = this.props.data.contentfulBlogs;
     const disqusShortname = "thelifecoding";
-    console.log(data);
     const disqusConfig = {
       identifier: data.id,
       title: data.title

@@ -1,14 +1,8 @@
 import React, { Component } from "react";
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import { TextareaAutosize } from '@material-ui/core';
 import {
   withStyles,
-  makeStyles,
-  createMuiTheme,
 } from '@material-ui/core/styles';
 export default class Contact extends Component {
   
@@ -32,16 +26,6 @@ export default class Contact extends Component {
         },
       },
     })(TextField);
-    
-    const useStyles = makeStyles((theme) => ({
-      root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-      },
-      margin: {
-        margin: theme.spacing(1),
-      },
-    }));
 
     return (
       <div className="contact section" id="Contact">

@@ -34,12 +34,7 @@ export default class Banner extends Component {
             </div>
             <ul className="social">
               <li>
-                <a
-                  className="fab fa-facebook-f"
-                  href={data.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                ></a>
+                <a className="fab fa-facebook-f" href={data.facebook} target="_blank" rel="noopener noreferrer"></a>
               </li>
               <li>
                 <a

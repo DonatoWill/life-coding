@@ -5,8 +5,10 @@ import SEO from "../components/seo";
 import Banner from "../components/banner";
 import Blogs from "../components/blogs";
 import Contact from "../components/contact";
+
 const title = "{ The Life Coding }";
 const IndexPage = ({ data }) => (
+  
   <Layout header="home">
     <SEO
       title={title}
@@ -26,6 +28,7 @@ const IndexPage = ({ data }) => (
         return <Contact data={data.contentfulAboutMe.gmail}></Contact>;
       })}
   </Layout>
+  
 );
 
 export default IndexPage;

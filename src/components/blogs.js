@@ -43,6 +43,8 @@ export default class Blogs extends Component {
                     </div>
                   </li>
                 );
+              }else{
+                return(null);
               }
             })}
           </ul> }

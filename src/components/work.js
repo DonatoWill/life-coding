@@ -16,7 +16,7 @@ export default class work extends Component {
             {      
             uniqueProjects.map((item, index) => {
               if(itens.includes(item.node.url)){
-
+                return(null);
               }else{
                 itens.push(item.node.url);              
                 return (
