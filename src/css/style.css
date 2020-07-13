@@ -308,7 +308,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 .photos-page-list .item img:hover{-webkit-transform:scale(1.1)!important;transform:scale(1.1)!important}
 @media only screen and (max-width:1024px){
     .timeline{margin: 0; max-width: 100%;padding: 20px 14px 50px 13px;}
-    .container {width: 100%;padding-right: 8px;padding-left: 5px;}
+    .container {width: 100%;padding-right: 8px;padding-left: 8px;}
     .blog-post .container .details {padding: 2em .5em 6em .5em;}
 }
 @media only screen and (max-width:991px){
