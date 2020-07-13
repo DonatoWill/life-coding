@@ -11,13 +11,13 @@ export default class ProfessionalExperience extends Component {
           </div>
           <ul className="timeline">
             <li className="event">
-              <span className="double-year-experience">2019 - 2020</span>
-              <h3>Bionexo</h3>
+              <h3>Bionexo (2019 - 2020)</h3>
               <p>Implantação de novos módulos e manutenção de Sistema para Aquisição e
                   Gestão de Materiais de Alto Custo (OPME) para hospitais, utilizando
                   metodologias ágeis como scrum e kanban, participando dos processos de
                   análise, desenvolvimento e deploy em produção
               </p>
+              <br></br>
               <ul className="technologies">
                 <li>Java</li>
                 <li>Spring</li>
@@ -34,12 +34,12 @@ export default class ProfessionalExperience extends Component {
               </ul>
             </li>
             <li className="event" data-date="2005">
-              <span className="double-year-experience">2018 - 2019</span>
-              <h3>T2S - Tecnologia, Soluções e Sistemas</h3>
+              <h3>T2S - Tecnologia, Soluções e Sistemas (2018 - 2019)</h3>
               <p>Desenvolvimento de soluções para o Setor Portuário, criando sistemas utilizando diferentes tipos de linguagens e metodologias no principais terminais brasileiros.</p> 
               <p>- Automação de TDR (terminal departure report), sistema que automatiza o preenchimento do documento, de acordo com os dados do terminal e o modelo de relatório predefinido pelo armador. Trazendo mais produtividade para o planner.</p>
               <p>- Desenvolvimento de sistema ADE02 , aplicação web que auxilia os recintos alfandegados a atender ao Ato Declaratório Executivo COANA/COTEC 02/2003, da Receita Federal do Brasil (RFB).</p>
               <p>- Desenvolvimento Portal Intitucional e de Serviços Tecon Suape.</p> 
+              <br></br>
               <ul className="technologies">
                 <li>Java</li>
                 <li>Spring</li>
@@ -56,10 +56,10 @@ export default class ProfessionalExperience extends Component {
               </ul>   
             </li>
             <li className="event" id="date" data-date="2009">
-              <span className="double-year-experience">2017  - 2018</span>
-              <h3>Agência de Inovação INOVA Paula Souza</h3>
+              <h3>Agência de Inovação INOVA Paula Souza (2017  - 2018)</h3>
               <p>Desenvolvimento de sistema Java Web utilizando HTML, CSS, JavaScript, AngularJS, JQuery, Bootstrap 3, VisualSVN Server para o controle de versionamento, back-end utilizando Java, realizando requisições com o Banco de Dados (PostegreSQL), controle de acesso e sessão e sistema de mailing em conjunto com a ferramenta Sendgrid.
 </p>
+              <br></br>
               <ul className="technologies">
                 <li>Java</li>
                 <li>Spring</li>

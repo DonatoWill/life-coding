@@ -12,10 +12,10 @@ export default class Blogs extends Component {
     const itens = [];
     return (
       <Layout>
-        <SEO
-          title="Blogs"
-          keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`, `Blogs`]}
-        />
+      <SEO
+        title="Blogs"
+        keywords={[`Developer`, `Web`, `Software`, 'Coding', 'The Life Coding', 'Programação']}
+      />
         <div className="site-container blogs-page" id="Blogs">
           <div className="container">
             <div className="section-head">

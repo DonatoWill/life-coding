@@ -10,7 +10,7 @@ export default class service extends Component {
           <div className="section-head">
             <h2>Conhecimentos</h2>
           </div>
-          <div className="row">
+          <div className="row-techs">
             <Img
                 fixed={data.jsLogo.childImageSharp.fixed}
                 className="customImg"

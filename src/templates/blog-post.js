@@ -34,7 +34,8 @@ export default class blogPost extends Component {
             `Software`,
             `Developer`,
             `Backend Developer`,
-            `System Developer`,
+            `Desenvolvedor de Sistemas`,
+            'Progrmador',
             `${data.title}`
           ]}
         />
