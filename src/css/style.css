@@ -309,6 +309,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 @media only screen and (max-width:1024px){
     .timeline{margin: 0; max-width: 100%;padding: 20px 14px 50px 13px;}
     .container {width: 100%;padding-right: 8px;padding-left: 5px;}
+    .blog-post .container .details {padding: 2em .5em 6em .5em;}
 }
 @media only screen and (max-width:991px){
     .blogs-list .item{width:50%!important}
@@ -321,7 +322,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     
 }
 @media only screen and (max-width:767px){
-    .site-header .header-main .logo{width:10%;width:calc(10% - 30px)}
+    .site-header .header-main .logo{width:10%;width:calc(18% - 30px)}
     .site-header .header-main{flex-wrap:wrap;align-items:center;justify-content:flex-start}
     .site-header .header-main .menu{position:fixed;top:0;right:-100%;bottom:0;width:100%;z-index:1;background:#000000c9;z-index:999;padding:80px 0 0 0;-webkit-transition:0.3s all;transition:0.3s all}
     .site-header.active .logo{z-index:9999}
@@ -336,7 +337,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     h1,
     .h1{font-size:32px}
     h2{font-size:24px;line-height:30px}
-    .responsive-menu{display:flex;float:right}
+    .responsive-menu{display:grid;float:right; right: 1em; position: absolute;}
     .site-header .header-main .menu ul li a{padding:6px 20px;display:inline-block;width:100%;border-bottom:1px solid #fff;box-sizing:border-box;font-size:14px}
 }
 @media only screen and (max-width:568px){
