@@ -56,7 +56,7 @@ export default class Header extends Component {
                   </li>
                  
                   <li>
-                    <Link to={`/portfolio`}>Portfolio</Link>
+                    <Link to={`/portfolio`}>Portfólio</Link>
                   </li>
 
                   <li>
