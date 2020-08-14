@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
 import '../css/lp.css';
+import Footer from "../components/footer";
 
 export default class LandPage extends Component {
 
@@ -88,9 +89,11 @@ export default class LandPage extends Component {
                     </div>
                 </div>
             </div>
-            
+            <Footer></Footer>
           </div>
+         
       );
+      
     }
 }
 
