@@ -5,9 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .lp-banner h1{
     color:#FFF;
+    text-align: center;
 }
 .lp-banner-details {
     z-index: 9;
@@ -21,20 +21,23 @@
     padding-left: 0em;
     max-height: 100vh;
     height: 100vh;
-    margin-left: -36%;
+    text-align: center;
+    position: relative;
 }
 .lp-sub-title{
-    font-size: 28px;
+    font-size: 22px;
     color: #FFF;
 }
 .lp-sub-title-2{
-    font-size: 20px;
+    font-size: 21px;
     color: #FFF;
     margin-bottom: 2em;
+    text-align: center;
+    padding: 0px 1em;
+    margin-top: 1em;
 }
-
 .lp-banner-details h1{
-    font-size: 55px;
+    font-size: 40px;
 }
 .lp-banner-details .texto-destaque{
     text-shadow: 0px 0px 32px #ef5826;
@@ -42,7 +45,7 @@
 .lp-cta{
     text-align: center;
     display: inline-block;
-    width: 28%;
+    width: 58%;
     height: 4em;
     margin-bottom: 2em;
     margin-top: 3em;
@@ -56,7 +59,6 @@
     padding: 0.9em 0;
     cursor: pointer;
 }
-
 .lp-cta a {
     text-decoration: none;
     width: auto;
@@ -67,42 +69,31 @@
     text-align:center;
     font-weight: 600;
 }
-
 .lp-cta span{
     font-size: 20px;
 }
-
 .lp-cta:hover{
     color:#FFF;
     background:#ef5826;
     box-shadow: 0px 0px 37px 0px #ef5826;
 }
-
 .lp-work {
     color:#FFF;
     top:-20%
 }
-
 .lp-service-card{
-    width: 30%;
-    margin-right: 4em;
-    min-height: 20em;
     box-shadow: 0px 0px 37px 0px #ef5826;
     border: 1px solid #ef5826;
+    margin-bottom: 1.5em;
 }
-
 .lp-service-card:hover{
     color:#FFF;
     background:#ef5826;
     box-shadow: 0px 0px 37px 0px #ef5826;
 }
-
 .lp-list-cards{
-    display: inline-flex;
-    width: 100%;
-    margin-bottom: 2em;
+    padding: 1em;
 }
-
 .lp-service-card h5{
     font-size: 25px;
 }
@@ -110,45 +101,40 @@
     font-size: 18px;
     color: darkgray;
 }
-
+.lp-service-card:hover>p.card-text{
+    color:#FFF !important;
+}
 .lp-service-title{
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .container-lp{
     padding-bottom: 6em;
 }
 .service-content{
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 }
-
 .lp-perfil-card{
-    margin-right: 7em;
     height: 4em;
     box-shadow: 0px 0px 37px 0px #ef5826;
     border: 1px solid #ef5826;
     cursor: pointer;
     background: #ef5826;
+    margin-bottom: 1em;
 }
-
 .lp-perfil-card h3{
     color:#FFF;
 }
-
 .lp-perfil-card:hover{
     color:#FFF;
     background:#ef5826;
     box-shadow: 0px 0px 37px 0px #ef5826;
 }
-
-
-.lp-cta-big{
+.lp-cta-big > div{
     text-align: center;
     display: inline-block;
-    width: 40%;
     height: 4em;
-    margin-bottom: 2em;
-    margin-left: 25%;
     fill: #ef5826;
     background: #ef5826;
     border-style: solid;
@@ -158,9 +144,9 @@
     box-shadow: 0px 0px 20px 0px #ef5826;
     padding: 0.9em 0;
     cursor: pointer;
+    width: 80%;
 }
-
-.lp-cta-big a{
+.lp-cta-big>div a{
     text-decoration: none;
     width: auto;
     height: auto;
@@ -171,24 +157,96 @@
     font-weight: 600;
     font-size: 25px;
 }
-
-.lp-cta-big:hover{
+.lp-cta-big>div:hover{
     box-shadow: 0px 0px 37px 0px #ef5826;
 }
-
+.lp-cta-big{
+    text-align: center;
+}
+.service-content{
+    margin-top: 8em;
+}
 .foguete{
-    width: 23em;
+    width: 20em;
     position: absolute;
-    top: 35%;
-    right: 22%;
-    transform: rotate(-45deg);
+    top: 65%;
+    right: 0;
+    bottom:0;
+    transform: rotate(-10deg);
     -webkit-animation:spin 2s infinite;
     -moz-animation:spin 2s infinite;
     animation:spin 2s infinite;
     position: fixed;
-    opacity: .5;
+    opacity: .4;
 }
 
 @-moz-keyframes spin { 100% { top:-22%; right: 22%;} }
 @-webkit-keyframes spin { 100% { top:-22% } }
 @keyframes spin { 100%{ top:-32%;right: 52%; }}
+
+@media (min-width: 992px){
+    .title-content{
+        width: 60%;
+        margin-left: -26em;
+    }
+    .lp-perfil-card:not(:last-child){
+        margin-right: 2em;
+    }
+    .lp-perfil-card{
+        width: 32%;
+        text-align: center;
+    }
+    .lp-list-cards{
+        display: flex;
+    }
+    .lp-service-title {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    .lp-service-card {
+        box-shadow: 0px 0px 37px 0px #ef5826;
+        border: 1px solid #ef5826;
+        margin-bottom: 1.5em;
+        width: 33%;
+    }
+    .lp-service-card:not(:last-child) {
+        margin-right: 1em;
+    }
+
+    .lp-banner-details h1 {
+        font-size: 61px;
+    }
+    .lp-sub-title {
+        font-size: 25px;
+        color: #FFF;
+    }
+    .service-content{
+        margin-top: 10em;
+    }
+
+    .lp-sub-title-2 {
+        font-size: 28px;
+        color: #FFF;
+        margin-bottom: 2em;
+        text-align: center;
+        padding: 0px 1em;
+        margin-top: 1em;
+    }
+
+    .foguete{
+        width: 23em;
+        position: absolute;
+        top: 35%;
+        right: 22%;
+        transform: rotate(-45deg);
+        -webkit-animation:spin 2s infinite;
+        -moz-animation:spin 2s infinite;
+        animation:spin 2s infinite;
+        position: fixed;
+        opacity: .5;
+    }
+    
+    @-moz-keyframes spin { 100% { top:-22%; right: 22%;} }
+    @-webkit-keyframes spin { 100% { top:-22% } }
+    @keyframes spin { 100%{ top:-32%;right: 52%; }}
+}

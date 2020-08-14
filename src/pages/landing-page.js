@@ -13,11 +13,11 @@ export default class LandPage extends Component {
             <div className="lp-banner">
             <div className="container container-lp">
                 <div className="lp-banner-details">
+                <div className="title-content">
                     <div>
                         <h1><span className="texto-destaque">Seu produto</span> ao alcance de todos!</h1>
                     </div>
-                    <p className="lp-sub-title">Criamos Landing Pages para <span className="texto-destaque">aumentar suas vendas</span></p>
-                    <span className="lp-sub-title">na internet</span>               
+                    <p className="lp-sub-title">Criamos Landing Pages para <span className="texto-destaque">aumentar suas vendas</span></p>              
                     <div className="lp-cta">
                         <div>
                         <Link to="/whatsapp">
@@ -25,16 +25,16 @@ export default class LandPage extends Component {
                         </Link>
                         </div>
                     </div>
-                   
+                    </div>
                 </div>
-                <div class="foguete">
+                <div className="foguete">
                 <Img
                     fluid={data.foguete.childImageSharp.fluid}
                     objectPosition="50% 50%"
                     />
                 </div>
-                <div class="service-content">
-                <h1>Multiplique suas vendas através da internet</h1>
+                <div class="first-content">
+                <h1><span className="texto-destaque">Multiplique</span> suas vendas através da internet</h1>
                 <p className="lp-sub-title-2">Se você possui um dos perfis abaixo e ainda não possui um site, provavelmente está perdendo dinheiro</p>
                 <div class="lp-list-cards">
                     <div class="card lp-perfil-card">
@@ -53,61 +53,39 @@ export default class LandPage extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="lp-list-cards">
-                    <div class="card lp-perfil-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Prestador de Serviço</h3>
-                        </div>
-                    </div>
-                    <div class="card lp-perfil-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Empreendedor</h3>
-                        </div>
-                    </div>
-                    <div class="card lp-perfil-card">
-                        <div class="card-body">
-                            <h3 class="card-title">Criador de Conteúdo</h3>
-                        </div>
-                    </div>
-                </div>
                 </div>
 
                 <div class="service-content">
-                <h1 class="lp-service-title">Nossos Serviços</h1>
+                <h1 class="lp-service-title">O QUE OFERECEMOS?</h1>
                 <div class="lp-list-cards">
                     <div class="card lp-service-card">
                         <div class="card-body">
                             <h5 class="card-title">Criação de Site</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
                     <div class="card lp-service-card">
                         <div class="card-body">
                             <h5 class="card-title">Páginas Customizadas</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
                     <div class="card lp-service-card">
                         <div class="card-body">
                             <h5 class="card-title">Lançamentos</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
                 </div>
                 </div>
-
                 <div className="lp-cta-big">
-                        <div>
-                        <Link to="/whatsapp">
-                            <span>Pedir orçamento</span>
-                        </Link>
-                        </div>
+                    <div>
+                            <div>
+                            <Link to="/whatsapp">
+                                <span>QUERO VENDER MAIS</span>
+                            </Link>
+                            </div>
+                    </div>
                 </div>
             </div>
             
