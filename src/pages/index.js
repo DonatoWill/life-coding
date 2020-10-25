@@ -9,7 +9,7 @@ import Contact from "../components/contact";
 const title = "{ The Life Coding }";
 const IndexPage = ({ data }) => (
   
-  <Layout header="home">
+  <Layout header="home" id="root">
     <SEO
       title={title}
       keywords={[`Developer`, `Web`, `Software`, 'Coding', 'The Life Coding', 'Programação']}
@@ -109,6 +109,7 @@ export const pageQuery = graphql`
           }
           createdAt
           updatedAt
+          category
         }
       }
     }

@@ -10,6 +10,28 @@ export default class ProfessionalExperience extends Component {
           </div>
           <ul className="timeline">
             <li className="event">
+              <h3>Kestraa (2020 - Atual)</h3>
+              <p>Desenvolvimento de soluções escaláveis para a gestão e a operação de comércio exterior, 
+                por meio da simplificação radical dos processos e da gestão inteligente da operação em tempo real.
+              </p>
+              <br></br>
+              <ul className="technologies">
+                <li>Java</li>
+                <li>Kotlin</li>
+                <li>SAP Hana</li>
+                <li>RabbitMQ</li>
+                <li>Docker</li>
+              </ul>
+              <ul className="technologies">
+                <li>AWS</li>
+                <li>Git</li>
+                <li>Linux</li>
+                <li>JS</li>
+                <li>Web</li>
+                <li>React</li>
+              </ul>
+            </li>
+            <li className="event">
               <h3>Bionexo (2019 - 2020)</h3>
               <p>Implantação de novos módulos e manutenção de Sistema para Aquisição e
                   Gestão de Materiais de Alto Custo (OPME) para hospitais, utilizando
