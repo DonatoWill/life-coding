@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
                   title="Portfólio"
                   keywords={[`Developer`, `Web`, `Software`, 'Coding', 'The Life Coding', 'Programação']}
                 />
-                <div className="site-container blogs-page" id="Blogs">
+                <div className="site-container exp-page" id="Blogs">
                     <div className="container">
                         <Service data={data}></Service>
                         <ProfessionalExp data={data.allContentfulWorks}></ProfessionalExp>

@@ -11,25 +11,29 @@ export default class Contact extends Component {
     const CssTextField = withStyles({
       root: {
         '& label.Mui-focused': {
-          color: '#ef5826',
+          color: '#FFF',
         },
         '& .MuiInput-underline:after': {
-          borderBottomColor: '#ef5826',
+          borderBottomColor: '#FFF',
         },
         '& .MuiOutlinedInput-root': {
           '&.Mui-focused fieldset': {
-            borderColor: '#ef5826',
+            borderColor: '#FFF',
           },
           '&:hover': {
-            borderColor: '#ef5826',
+            borderColor: '#FFF',
           },
+          
         },
+        '& .MuiInputLabel-formControl':{
+          color:'#FFF'
+        }
       },
     })(TextField);
 
     return (
       <div className="contact section" id="Contact">
-        <div className="container">
+        <div className="container container-contact">
           <div className="section-head">
             <h2 className="text-center">Contato</h2>
           </div>

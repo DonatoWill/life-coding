@@ -14,7 +14,7 @@ export default class Blogs extends Component {
     this.updateFilterPost = this.updateFilterPost.bind(this);
     this.filterPost = ""
     this.state = {
-      posts: []
+      posts: props.data.allContentfulBlogs.edges
     }
     this.data = props.data;
     this.itens = []
@@ -47,7 +47,8 @@ export default class Blogs extends Component {
   }
 
   render() {
-    const renderPosts = this.state.posts.map((item, index) => {
+    this.itens = []
+    let renderPosts = this.state.posts.map((item, index) => {
       if(!this.itens.includes(item.node.title)){
         this.itens.push(item.node.title);   
         return (
