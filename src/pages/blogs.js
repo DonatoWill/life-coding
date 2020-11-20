@@ -14,7 +14,8 @@ export default class Blogs extends Component {
     this.updateFilterPost = this.updateFilterPost.bind(this);
     this.filterPost = ""
     this.state = {
-      posts: props.data.allContentfulBlogs.edges
+      posts: props.data.allContentfulBlogs.edges,
+      selectedArea:""
     }
     this.data = props.data;
     this.itens = []
@@ -31,15 +32,18 @@ export default class Blogs extends Component {
     if(byArea == null){
       byArea = event.target.value
     }
+   
     if(byArea == ""){
       this.setState({
-        posts: this.data.allContentfulBlogs.edges
+        posts: this.data.allContentfulBlogs.edges,
+        selectedArea: byArea
       })
     }else{
       this.setState({
         posts: this.data.allContentfulBlogs.edges.filter(edge =>
           (edge.node.category == byArea)
-        )
+        ),
+        selectedArea: byArea
       })
     }
     this.itens = []
@@ -88,12 +92,12 @@ export default class Blogs extends Component {
         <div className="site-container blogs-page" id="BlogsPage">
           <div className="filter-post-area">
               <ul>                
-              <div className="filter-option" value="" onClick={this.updateFilterPost}>TODOS</div>
-                <div className="filter-option" value="carreira" onClick={this.updateFilterPost}>CARREIRA</div>
-                <div className="filter-option" value="algoritmo" onClick={this.updateFilterPost}>ALGORITMOS E ESTRUTURAS DE DADOS</div>
-                <div className="filter-option" value="coding" onClick={this.updateFilterPost}>CÓDIGOS / HANDS ON</div>
-                <div className="filter-option" value="qualidade" onClick={this.updateFilterPost}>QUALIDADE DE SOFTWARE</div>
-                <div className="filter-option" value="conceitos" onClick={this.updateFilterPost}>CONCEITOS DE PROGRAMAÇÃO</div>
+              <div className={"filter-option " + (this.state.selectedArea === ""? "selected-filter-option" : "")} value="" onClick={this.updateFilterPost}>TODOS</div>
+                <div className={"filter-option " + (this.state.selectedArea === "carreira"? "selected-filter-option" : "")} value="carreira" onClick={this.updateFilterPost}>CARREIRA</div>
+                <div className={"filter-option " + (this.state.selectedArea === "algoritmo"? "selected-filter-option" : "")} value="algoritmo" onClick={this.updateFilterPost}>ALGORITMOS E ESTRUTURAS DE DADOS</div>
+                <div className={"filter-option " + (this.state.selectedArea === "coding"? "selected-filter-option" : "")} value="coding" onClick={this.updateFilterPost}>CÓDIGOS / HANDS ON</div>
+                <div className={"filter-option " + (this.state.selectedArea === "qualidade"? "selected-filter-option" : "")} value="qualidade" onClick={this.updateFilterPost}>QUALIDADE DE SOFTWARE</div>
+                <div className={"filter-option " + (this.state.selectedArea === "conceitos"? "selected-filter-option" : "")} value="conceitos" onClick={this.updateFilterPost}>CONCEITOS DE PROGRAMAÇÃO</div>
               </ul>
           </div>
           <div className="container">

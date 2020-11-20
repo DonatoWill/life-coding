@@ -191,6 +191,7 @@ pre{margin-bottom:0}
   font-weight: 300;
   text-align: justify;
   font-size: 18px;
+  color: #FFF;
 }
 .timeline a { 
   color: #6c6d6d;
@@ -241,7 +242,7 @@ pre{margin-bottom:0}
   text-align: left;  
   font-weight: 100;  
   max-width: 100%;
-  background-color: #FFF;
+  background-color: #3e4346;
   margin-top: 4em;
 }
 .timeline h1 {
@@ -254,6 +255,7 @@ pre{margin-bottom:0}
    font-weight: 400;
    font-size: 1.4em;
    margin-bottom: 1em;
+   color: #FFF;
 }
 .timeline .event {
     border-bottom: 1px dashed rgb(239, 88, 38);
@@ -496,11 +498,18 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 }
 
 .filter-option:hover{
+    border-radius: 2%;
+    background: linear-gradient(90deg, #ef5826 -5%, #303841 119%);
+    border-right: none;
+}
+
+.selected-filter-option{
     border: 1px #ef5826 solid;
     border-radius: 2%;
     background: linear-gradient(90deg, #ef5826 -5%, #303841 119%);
     border-right: none;
 }
+
 .filter-title{
     color: rgb(239, 88, 38);
     font-weight: 800;
@@ -508,13 +517,16 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     font-size: 18px;
 }
 
-
 .filter-post-area-select{
     display: block;
     width: 100%;
     margin-top: 1em;
     margin-bottom: 2em;
     padding-left: .6em;
+}
+
+.MuiGrid-item{
+    margin:0 auto !important;
 }
 
 @media only screen and (min-width:1780px){

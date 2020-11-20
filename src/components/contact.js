@@ -27,6 +27,9 @@ export default class Contact extends Component {
         },
         '& .MuiInputLabel-formControl':{
           color:'#FFF'
+        },
+        '& .MuiGrid-item': {
+          margin: '10px'
         }
       },
     })(TextField);
@@ -34,8 +37,8 @@ export default class Contact extends Component {
     return (
       <div className="contact section" id="Contact">
         <div className="container container-contact">
-          <div className="section-head">
-            <h2 className="text-center">Contato</h2>
+          <div className="section-head text-center">
+            <h2>Contato</h2>
           </div>
           <form
             action={`https://formspree.io/${this.props.data}`}
