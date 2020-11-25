@@ -41,7 +41,7 @@ export default class Contact extends Component {
             <h2>Contato</h2>
           </div>
           <form
-            action={`https://formspree.io/${this.props.data}`}
+            action={`https://formspree.io/f/${this.props.data}`}
             name="contact"
             method="POST"
             data-netlify="true"
