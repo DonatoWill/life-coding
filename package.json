@@ -2,7 +2,7 @@
   "name": "donato-will",
   "private": true,
   "description": "Site/Blog para compartilhar alguns estudos e divulgar portfólio",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": "Donato William Gomes Aguiar",
   "dependencies": {
     "@material-ui/core": "^4.11.0",

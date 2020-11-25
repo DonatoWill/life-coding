@@ -41,7 +41,7 @@ export default class Contact extends Component {
             <h2>Contato</h2>
           </div>
           <form
-            action={`https://formspree.io/f/${this.props.data}`}
+            action={`https://formspree.io/f/mrgoapzy`}
             name="contact"
             method="POST"
             data-netlify="true"
@@ -50,6 +50,7 @@ export default class Contact extends Component {
             <Grid item xs={12} sm={8}>
               <CssTextField
                 required
+                type="text"
                 id="contact-name"
                 name="name"
                 label="Nome"
