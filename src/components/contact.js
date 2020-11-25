@@ -51,7 +51,7 @@ export default class Contact extends Component {
               <CssTextField
                 required
                 id="contact-name"
-                name="Nome"
+                name="name"
                 label="Nome"
                 fullWidth
                 autoComplete="given-name"
@@ -61,7 +61,7 @@ export default class Contact extends Component {
             <CssTextField
                 required
                 id="contact-name"
-                name="email"
+                name="_replyto"
                 type="email"
                 label="Email"
                 fullWidth
