@@ -32,7 +32,6 @@ export default class Blogs extends Component {
     if(byArea == null){
       byArea = event.target.value
     }
-   
     if(byArea == ""){
       this.setState({
         posts: this.data.allContentfulBlogs.edges,
@@ -47,7 +46,6 @@ export default class Blogs extends Component {
       })
     }
     this.itens = []
-    
   }
 
   render() {
